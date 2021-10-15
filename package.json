@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "name": "projet-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pertoldi/nodeProject.git"
+  },
+  "author": "Antoine Pertoldi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pertoldi/nodeProject/issues"
+  },
+  "homepage": "https://github.com/Pertoldi/nodeProject#readme",
+  "description": ""
+}
