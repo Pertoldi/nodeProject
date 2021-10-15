@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   },
   "scripts": {
@@ -8,7 +9,6 @@
   "name": "projet-node",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pertoldi/nodeProject.git"
