@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./layouts/head'); %>
+
+	<body>
+		<!-- Navigation-->
+		<%- include('./layouts/nav'); %>
+			<!-- Page Header-->
+			<header class="masthead" style="background-image: url('assets/img/contact-bg.jpg')">
+				<div class="container position-relative px-4 px-lg-5">
+					<div class="row gx-4 gx-lg-5 justify-content-center">
+						<div class="col-md-10 col-lg-8 col-xl-7">
+							<div class="page-heading">
+								<h1>Create a new post</h1>
+								<span class="subheading">To had data on MongoDB</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Main Content-->
+			<main class="mb-4">
+				<div class="container">
+
+					<form action="/post/new" method="POST">
+
+						<div class="form-floating mb-3">
+							<input type="text" class="form-control" id="floatingInputTitle" placeholder="Title" name="title">
+							<label for="floatingInputTitle">Title</label>
+						</div>
+
+						<div class="form-floating mb-3">
+							<textarea name="body" id="floatingInputBody" class="form-control" cols="30" rows="10" placeholder="Body"></textarea>
+							<label for="floatingInputBody">Body</label>
+						</div>
+
+						<button type="submit" class="btn btn-primary text-uppercase" id="submitButton">Submit</button>
+
+					</form>
+				</div>
+			</main>
+			<!-- Footer-->
+			<%- include('./layouts/footer'); %>
+				<%- include('./layouts/scripts'); %>
+	</body>
+
+</html>
