@@ -11,8 +11,8 @@
 					<div class="row gx-4 gx-lg-5 justify-content-center">
 						<div class="col-md-10 col-lg-8 col-xl-7">
 							<div class="page-heading">
-								<h1>Create a new post</h1>
-								<span class="subheading">To had data on MongoDB</span>
+								<h1>Create an Account</h1>
+								<span class="subheading">To had user on MongoDB</span>
 							</div>
 						</div>
 					</div>
@@ -22,21 +22,16 @@
 			<main class="mb-4">
 				<div class="container">
 
-					<form action="/post/new" method="POST">
+					<form action="/user/new" method="POST">
 
 						<div class="form-floating mb-3">
-							<input type="text" class="form-control" id="floatingInputTitle" placeholder="Title" name="title">
-							<label for="floatingInputTitle">Title</label>
+							<input type="text" class="form-control" id="floatingInputTitle" placeholder="userName" name="userName">
+							<label for="floatingInputTitle">userName</label>
 						</div>
 
 						<div class="form-floating mb-3">
-							<textarea name="content" id="floatingInputBody" class="form-control" cols="30" rows="10" placeholder="Body"></textarea>
-							<label for="floatingInputBody">Content</label>
-						</div>
-
-						<div class="form-floating mb-3">
-							<textarea name="userName" id="floatingInputUsername" class="form-control" cols="30" rows="10" placeholder="Body"></textarea>
-							<label for="floatingInputUsername">User Name</label>
+							<input type="password" class="form-control" id="password" placeholder="password" name="password">
+							<label for="password">Password</label>
 						</div>
 
 						<button type="submit" class="btn btn-primary text-uppercase" id="submitButton">Submit</button>
