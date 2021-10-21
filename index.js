@@ -17,12 +17,12 @@ mongoose.connect(`mongodb://localhost:27017/?readPreference=primary&appname=Mong
 app.use(express.static('public'));//pour avoir acces au ressources static: image etc...
 
 // EJS
-app.set('views', './views') //On indique que les views sont dans le dossier ./views
+app.set('views', './views') //On indique que les views sont dans le dossier ./views (dossier ./views par défault)
 app.set('view engine', 'ejs') //On indique que notre moteur de vue est ejs
 
 //Parser pour lire le corps des requetes post
 app.use(express.json())
-app.use(express.urlencoded({ useNewwUrlParser: true }))
+app.use(express.urlencoded({ extended: true }))
 
 app.get('/', async (req, res) => {
 	const blogposts = await BlogPost.find({})
@@ -77,7 +77,7 @@ app.post('/user/new', (req,res) => {
 	res.redirect('/')
 })
 
-app.get('/**',  (req,res) => {
+app.get('*',  (req,res) => {
 	res.redirect('/')
 })
 
